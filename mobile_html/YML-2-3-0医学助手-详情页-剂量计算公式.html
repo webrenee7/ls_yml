@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>dose_calculation_formula</title>
+<link href="res/css/mobile.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="head">
+    	<div class="header">
+        	<a href="#" class="home_icon"><img src="res/images/home_icon.png" /></a>
+            <h4 class="break">SDAI&CDAI剂量计算公式</h4>
+            <a href="#" class="reset">清空数据</a>
+        </div>
+    </div>
+    <div class="main">
+    	<div class="c_top">
+        	<div class="dose_box">
+            	<div class="formula_title">
+                	<label><input type="radio" class="radio" name="type" checked="checked" />简化疾病活动度指数（SDAI）</label>
+                </div>
+                <div class="dose_input_box">
+                	<div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">TJC(0~28)</p>
+                    		<p>（28个关节中的压痛关节数）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" placeholder="请输入..." />
+                        </div>
+                    </div>
+                    <div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">SJC(0~28)</p>
+                    		<p>（28个关节中的肿胀关节数）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" placeholder="请输入..." />
+                        </div>
+                    </div>
+                    <div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">PtGA(0~10)</p>
+                    		<p>（患者对疾病活动性的总体评分）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" placeholder="请输入..." />
+                        </div>
+                    </div>
+                    <div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">PrGA(0~10)</p>
+                    		<p>（医生对疾病活动性的总体评分）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" placeholder="请输入..." />
+                        </div>
+                    </div>
+                    <div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">CRP(0~10)</p>
+                    		<p>（C反应蛋白水平，单位：mg/dL,最大值为10mg/dL）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" placeholder="请输入..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dose_box">
+            	<div class="formula_title">
+                	<label><input type="radio" class="radio" name="type" />临床疾病活动度指数（CDAI）</label>
+                </div>
+                <div class="dose_input_box">
+                	<div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">TJC(0~28)</p>
+                    		<p>（28个关节中的压痛关节数）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" />
+                        </div>
+                    </div>
+                    <div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">SJC(0~28)</p>
+                    		<p>（28个关节中的肿胀关节数）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" />
+                        </div>
+                    </div>
+                    <div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">PtGA(0~10)</p>
+                    		<p>（患者对疾病活动性的总体评分）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" />
+                        </div>
+                    </div>
+                    <div class="dose_input_one clearfix">
+                    	<div class="dose_input_left">
+                        	<p class="p_name">PrGA(0~10)</p>
+                    		<p>（医生对疾病活动性的总体评分）</p>
+                        </div>
+                        <div class="dose_input_right">
+                        	<input type="text" class="input_text center input_style" />
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="c_bottom">
+        	<div class="center_btn">
+                <input type="button" class="btn cal_btn" value="计算结果" />
+            </div>
+            <div class="result_box">        	
+                <div class="result_one">                    
+                    <div class="result_input">
+                        <p class="clearfix">
+                            <span>SDAI (简化疾病活动度指数)</span>
+                        </p>
+                        <input type="text" class="input_text input_style" />                    
+                    </div>
+                    <div class="c_result">
+                    	<p class="c_result_title">SDAI (简化疾病活动度指数)</p>
+                        <ul>
+                            <li class="circle c_green clearfix">
+                                <p>临床缓解<span class="mal_18"></span>0.0~3.3</p>
+                            </li>
+                            <li class="circle c_yellow clearfix">
+                                <p>低疾病活动度<span class="mal_18"></span>3.4~11.0</p>
+                            </li>
+                             <li class="circle c_orange clearfix">
+                                <p>中等疾病活动度<span class="mal_18"></span>11.1~26.0</p>
+                            </li>
+                             <li class="circle c_red clearfix">
+                                <p>高疾病活动度<span class="mal_18"></span>26.1~86.0</p>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="result_one">                    
+                    <div class="result_input">
+                        <p class="clearfix">
+                            <span>CDAI (临床疾病活动度指数)</span>
+                        </p>
+                        <input type="text" class="input_text input_style" />                    
+                    </div>
+                    <div class="c_result">
+                    	<p class="c_result_title">CDAI (临床疾病活动度指数)</p>
+                        <ul>
+                            <li class="circle light_blue clearfix">
+                                <p>临床缓解<span class="mal_18"></span>0.0~2.8</p>
+                            </li>
+                            <li class="circle blue clearfix">
+                                <p>低疾病活动度<span class="mal_18"></span>2.9~10.0</p>
+                            </li>
+                             <li class="circle dark_blue clearfix">
+                                <p>中等疾病活动度<span class="mal_18"></span>10.1~22.0</p>
+                            </li>
+                             <li class="circle purple clearfix">
+                                <p>高疾病活动度<span class="mal_18"></span>22.1~76.0</p>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>		
+			</div>
+        </div>
+    </div>
+</body>
+</html>

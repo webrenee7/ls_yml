@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>calculator</title>
+<link href="res/css/mobile.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="head">
+    	<div class="header">
+        	<a href="#" class="home_icon"><img src="res/images/home_icon.png" /></a>
+            <h4 class="break">医学计算器</h4>
+            <a href="#" class="reset">清空数据</a>
+        </div>
+    </div>
+    <div class="main">
+    	<div class="c_top">
+	    	<div class="c_radio_box">
+        		<div class="one_radio_box">
+                	<label><input type="radio" class="radio" name="type"  checked="checked"/>急性期反应指标（ESR)</label>
+                    <input type="text" class="radio_text input_style" />
+                </div>
+                <div class="one_radio_box">
+                	<label><input type="radio" class="radio" name="type" />急性期反应指标（CRP)</label>
+                    <input type="text" class="radio_text input_style" />
+                </div>
+    	    </div>
+            <div class="c_input_box">
+            	<div class="c_input_one">
+                	<p class="p_name">TJC28</p>
+                    <p>（28个关节中的压痛关节数）</p>
+                    <input type="text" class="input_style" placeholder="请输入..." />
+                </div>
+                <div class="c_input_one">
+                	<p class="p_name">SJC28</p>
+                    <p>（28个关节中的肿胀关节数）</p>
+                    <input type="text" class="input_style" placeholder="请输入..." />
+                </div>
+                <div class="c_input_one">
+                	<p class="p_name">CH</p>
+                    <p>（总体健康评估）</p>
+                    <input type="text" class="input_style" placeholder="请输入..." />
+                </div>
+            </div>            
+        </div>
+        <div class="c_bottom">
+        	<div class="center_btn">
+                  <input type="button" class="btn cal_btn" value="计算结果" />
+              </div>
+        	<div class="result_box">
+            	<div class="result_one">            	
+                    <div class="result_input">
+                        <p class="clearfix">
+                            <span class="left">DAS28(ESR)</span>
+                            <span class="right circle_green_d">临床缓解</span>
+                        </p>
+                        <input type="text" class="input_text input_style" />
+                        <p class="p_formula">公式：0.56*√(TJC28)+0.28*√(SJC28)+0.7*InESR+0.014*GH</p>
+                    </div>
+                    <div class="result_input">
+                        <p>
+                            <span>DAS28(CRP)</span>                        
+                        </p>
+                        <input type="text" class="input_text input_style" />
+                        <p class="p_formula">公式：0.56*√(TJC28)+0.28*√(SJC28)+0.36*In(CRP+1)+0.014*gh+0.96</p>
+                    </div>
+                    <div class="c_result">
+                        <ul>
+                            <li class="circle c_green clearfix">
+                                <p class="re_name">临床缓解</p>
+                                <p class="re_num"><2.6</p>
+                            </li>
+                            <li class="circle c_yellow clearfix">
+                                <p class="re_name">低疾病活动度</p>
+                                <p class="re_num">≥2.6~<3.2</p>
+                            </li>
+                             <li class="circle c_orange clearfix">
+                                <p class="re_name">中等疾病活动度</p>
+                                <p class="re_num">≥3.2~≤5.1</p>
+                            </li>
+                             <li class="circle c_red clearfix">
+                                <p class="re_name">高疾病活动度</p>
+                                <p class="re_num">>5.1</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="result_tip">
+                        <p>ESR单位：mm/h;CRP单位：mg/L</p>
+                        <p>√表示根号，   In表示自然对数</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

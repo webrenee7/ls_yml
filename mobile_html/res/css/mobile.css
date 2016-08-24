@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ width:100%; height:100%;font:14px/24px 'Microsoft YaHei'; color:#666; background:#ebebeb; }
+html{ height:100%;}
+*{padding:0; margin:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul,ul li{ list-style:none}
+a{ color:#914b95; text-decoration:none;}
+.left{ float:left;}
+.right{ float:right;}
+.center{ text-align:center;}
+.break{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+select,select:focus{ outline:none}
+input,textarea,select{ background:none; border:none; -webkit-appearance:none; font-family:"Microsoft YaHei"; line-height:normal; outline:none; color:#666;}
+.btn{ background:none; border:none; line-height:normal; cursor:pointer;}
+img{ border:medium none;}
+.clear{ clear:both;}
+.clearfix:after {
+    content: ".";             
+	display: block;            
+    height: 0; 
+	font-size:0;
+    clear: both;              
+    visibility: hidden;	     
+}
+.clearfix {display:block;}
+
+/*header*/
+.head{ width:100%; height:44px; background:#914b95;}
+.header{ width:94%; margin:0 auto; display:-webkit-box;}
+.header h4{ font-size:18px; color:#fefeff; line-height:44px; text-align:center; -webkit-box-flex:1;}
+.header a{ display:block; width:56px;}
+.home_icon{height:27px;margin-top:9px;}
+.home_icon img{ width:27px; height:27px;}
+.reset{ margin-top:13px;color:#fff;}
+
+/*计算器*/
+.main{ width:94%; margin:0 auto; padding-bottom:5%;}
+.c_radio_box{ padding-top:3px;}
+.one_radio_box{ margin-top:15px; display:-webkit-box; line-height:35px;}
+.one_radio_box label{ width:163px; color:#914b95;}
+.one_radio_box label,.radio_text{display:block;font-size:12px;}
+.radio_text{ -webkit-box-flex:1;padding:0 10px;}
+.radio{ width:17px; height:17px; margin-right:6px; background:url(../images/radio.png) no-repeat; background-size:100% 100%; vertical-align:middle; margin-bottom:3px;}
+.radio:checked{ background:url(../images/radio_on.png) no-repeat; background-size:100% 100%;}
+.c_input_box{  padding:2% 3% 0;}
+.c_input_one{ margin-top:5%;}
+.p_name{ font-size:15px; font-weight:bold; line-height:25px;}
+.c_input_box input{ width:83%; padding:0 4%;margin-top:6px;  font-size:14px;}
+.result_box{margin-top:7%;}
+.center_btn{ text-align:center;}
+.cal_btn{ width:54%; height:40px; text-align:center; background:#914b95; line-height:40px; font-size:18px; color:#fff;}
+.result_input{ margin:4% 0;}
+.result_input p{ font-size:15px;  line-height:35px;}
+.result_input p span{color:#914b95; font-weight:bold;}
+.circle_green_d{ background:url(../images/circle_green_d.png) no-repeat left center; padding-left:21px; font-size:12px; margin-right:6%;}
+.input_text{ width:94%; padding:0 3%;font-size:14px; color:#666;}
+.result_input input::-webkit-input-placeholder { color:#000; font-size:12px; }
+.result_input .p_formula{ font-size:12px; line-height:15px; margin-top:3%; word-break:break-all; color:#333;}
+.c_bottom{line-height:22px; font-size:12px; padding-top:7%;}
+.c_result_title{ padding-bottom:5px;}
+.c_result li{ }
+.mal_18{ margin-left:18px;}
+.c_result li .re_name{ width:100px; float:left;}
+.c_result li .re_num{ float:left;}
+.circle{background:url(../images/circle.png) no-repeat left; padding-left:21px; }
+.c_green{ background-position:0 5px;}
+.c_yellow{background-position:0 -12px;}
+.c_orange{background-position:0 -30px;}
+.c_red{background-position:0 -48px;}
+.light_blue{background-position:0 -66px;}
+.blue{background-position:0 -84px;}
+.dark_blue{background-position:0 -104px;}
+.purple{background-position:0 -123px;}
+.result_tip{ margin-top:4%; font-size:12px; }
+
+/*计算公式*/
+.formula_title,.grey_title{ font-size:15px; line-height:25px;margin:13px 0;}
+.formula_title,.formula_title a{ color:#914b95;}
+.formula_body{}
+.formula_body table{ border-collapse:collapse; border:1px solid #666; font-size:12px; text-align:center; color:#333;}
+.formula_body table th{border:1px solid #bfbfbf; font-size:13px; line-height:28px; }
+.formula_body table .title{height:26px; line-height:26px;}
+.formula_body table td{ border:1px solid #bfbfbf; height:22px; line-height:22px;}
+
+/*剂量计算公式*/
+.dose_box{}
+.dose_input_box{}
+.dose_input_one{ padding-bottom:6%;position:relative;}
+.dose_input_left{ width:60%; font-size:12px; float:left;}
+.dose_input_right{ width:38%; position:absolute; right:0; top:50%;margin-top:-17px; }
+
+/*雅美罗公式*/
+.input_style{ height:35px; line-height:35px; background:#fff;}
+.ya_top{ padding-top:7px;}
+.ya_box{}
+.grey_title{}
+.ya_input{ font-size:15px; line-height:35px;}
+.ya_left_box input{ width:62%; padding:0 10px; font-size:15px;}
+.ya_left_box{/* width:45%;*/ width:135px; float:left;}
+.mal_6p{ margin-left:6%;}
+.ml_box{ margin-top:20px;}
+.pic_box{ float:left; margin:16px 4% 0;}
+.pic_box,.pic_box img{ width:36px; height:71px;}
+.num_box{ width:90px; float:left; margin-top:28px;}
+.num_box input{ width:45px; padding:0 10px;}
+.purple_txt{ color:#914b95;}
+.formula_table{ margin-top:20%;}
+
+/*医学助手详情页*/
+.ma_info{ width:96%; margin:0 auto;}
+.ma_info_ship{ border:1px solid #d7d7d7; border-radius:5px; background:#fff; margin-top:15px; position:relative; overflow:hidden;}
+.ma_info_ship a{ display:block; color:#914b95;padding:15px 5%; }
+.ma_info_ship p{ width:240px; float:left;}
+.next_btn{ width:14px; height:14px; background:url(../images/next.png) no-repeat; background-size:100% 100%; position:absolute; right:5%; top:50%; margin-top:-7px;}
+
+/*下载页*/
+.d_logo{ width:46%; margin:0 auto; padding:40% 0 42%;}
+.down_box{ width:90%; margin:0 auto;}
+.down_btn{ width:100%; height:42px; border:1px solid #d7d7d7; background:#914995; font-size:15px; color:#fff; text-align:center; line-height:42px; border-radius:5px;}
